@@ -1,0 +1,9 @@
+.avatar{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+ .nopadding{
+    padding: 0 !important;
+    margin: 0 !important;
+ }
