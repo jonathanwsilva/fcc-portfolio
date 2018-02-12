@@ -1,4 +1,4 @@
-.avatar{
+.jon{
     width: 140px;
     height: 140px;
     border-radius: 50%;
@@ -8,19 +8,21 @@
     margin: 0 !important;
  }
 
- .link{
-    list-style-type: none;
-}
-
-.link > a{
-    text-decoration: none;
-}
-
-.link > a:hover{
-    color: white;
-    text-decoration: none;
-}
-
 .white-text{
     color: white;
 }
+
+.white-text:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-internal > a{
+    display: block;
+}
+
+#sidebar {
+    position: -webkit-sticky;  // required for Safari
+    position: sticky;
+    top: 0; // required as well.
+}   
