@@ -21,8 +21,9 @@
     display: block;
 }
 
-#sidebar {
-    position: -webkit-sticky;  // required for Safari
+.sidebar {
+    background-color: purple;
+    position: -webkit-sticky;
     position: sticky;
-    top: 0; // required as well.
+    top: 0; 
 }   
