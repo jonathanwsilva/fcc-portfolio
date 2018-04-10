@@ -1,4 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
 .jon{
+    display: block;
+    margin: 0 auto;
     width: 140px;
     height: 140px;
     border-radius: 50%;
@@ -10,26 +21,92 @@
 
 .white-text{
     color: white;
+    
 }
 
-.white-text:hover{
-    color: white;
+a.white-text:hover, .white-text a:hover{
+    color: #DDD;
+}
+
+.sidebar{
+    padding: 1em;
+}
+
+.sidebar-nav-internal{
+    margin: 0.7em;
+}
+
+.sidebar-nav-internal a{
+    position: relative;
+    display: inline-block;
+    line-height: 1.3em;
+    margin-bottom: 0.5em;;
+}
+
+.sidebar-nav-internal a::after{
+    content: " ";
+    position: absolute;
+    display: block;
+    height: 0.05em;
+    width: 0%;
+    background-color: white;
+}
+
+.sidebar-nav-internal a:hover::after{
+    width: 100%;
+}
+
+a.selected::after{
+
+}
+
+.sidebar-nav-external{
+    margin: 0.7em;
+}
+
+.sidebar-nav-external a{
+    font-size: 1.5em;
+    flex: 1 1 auto;
+}
+
+
+
+.sidebar {
+    background-color: burlywood;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    font-family: Georgia, sans-serif;
+}
+
+.sidebar span{
+    margin: 0.7em;
+    font-weight: 600;
+}
+
+.sidebar a{
+    color: inherit;
     text-decoration: none;
 }
 
-.nav-internal > a{
-    display: block;
+.sidebar + div{
+    margin-left: 20%;
 }
 
-.sidebar a:hover{
-    color: #DDDDDD;
+.sidebar-title{
+    margin: 0.5em;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 600;
+    text-transform: uppercase;
 }
-
-.sidebar {
-    background-color: green;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0; 
-    font-family: Georgia, sans-serif;
-}   
+.sidebar-subtitle{
+    margin: 0.5em;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 
