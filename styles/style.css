@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 16px;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -111,3 +115,21 @@ a.selected::after{
     text-transform: uppercase;
 }
 
+.site_main{
+    padding: 5% 5%;
+}
+
+.blag_post{
+    margin-bottom: 5%;
+    font-size: 1.3em;
+}
+
+.blag_post h1{
+    font-size: 1.8em;
+}
+
+
+
+.blag_post{
+
+}
