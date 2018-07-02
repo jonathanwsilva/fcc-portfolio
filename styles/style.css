@@ -11,15 +11,7 @@ body{
     padding: 0;
 }
 
-.jon{
-    display: block;
-    margin: 0 auto;
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    border: 8px solid burlywood;
-}
- .nopadding{
+.nopadding{
     padding: 0 !important;
     margin: 0 !important;
  }
@@ -33,33 +25,33 @@ a.white-text:hover, .white-text a:hover{
     color: #DDD;
 }
 
+.sidebar {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ba9562;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1em;
+    /*height: 100%;
+    width: 20%;*/
+    font-family: Georgia, sans-serif;
+}
+
 .sidebar-nav-internal{
     margin: 0.7em;
+    text-align: center;
+
 }
 
 .sidebar-nav-internal a{
-    position: relative;
+    text-transform: uppercase;
     display: inline-block;
     line-height: 1.3em;
-    margin-bottom: 0.5em;;
-}
-
-.sidebar-nav-internal a::after{
-    content: " ";
-    position: absolute;
-    display: block;
-    height: 0.05em;
-    width: 0%;
-    background-color: white;
-}
-
-.sidebar-nav-internal a:hover::after{
-    transition: width 0.5s;
-    width: 100%;
-}
-
-a.selected::after{
-
+    margin-bottom: 0.5em;
+    font-size: 20px;
 }
 
 .sidebar-nav-external{
@@ -71,15 +63,15 @@ a.selected::after{
     flex: 1 1 auto;
 }
 
-.sidebar {
-    background-color: #ba9562;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 1em;
-    /*height: 100%;
-    width: 20%;*/
-    font-family: Georgia, sans-serif;
+
+.sidebar-photo{
+    align-self: center;
+    display: block;
+    margin: 0 auto;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 8px solid burlywood;
 }
 
 
