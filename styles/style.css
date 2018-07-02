@@ -17,6 +17,7 @@ body{
     width: 140px;
     height: 140px;
     border-radius: 50%;
+    border: 8px solid burlywood;
 }
  .nopadding{
     padding: 0 !important;
@@ -71,7 +72,7 @@ a.selected::after{
 }
 
 .sidebar {
-    background-color: burlywood;
+    background-color: #ba9562;
     position: fixed;
     top: 0;
     left: 0;
