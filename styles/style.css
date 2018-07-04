@@ -43,6 +43,7 @@ body{
     text-transform: uppercase;
     display: inline-block;
     line-height: 2em;
+    letter-spacing: 0.05em;
     margin-bottom: 0.5em;
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
@@ -69,27 +70,54 @@ body{
     font-weight: 600;
 }
 
-.navbar + div{
-    margin-left: 20%;
-}
-
-.navbar-title{
-    margin: 0.5em;
-    text-align: center;
-    font-size: 1.3em;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-.navbar-subtitle{
-    margin: 0.5em;
-    text-align: center;
-    font-size: 1em;
-    font-weight: 600;
-    text-transform: uppercase;
+.navbar + *{
+    margin-left: 14%;
 }
 
 .site_main{
-    padding: 5% 10%;
+    padding: 0 5%;
+}
+
+.site-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.site-heading{
+    font-family: 'Montserrat', serif;
+    font-variant: small-caps;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.site-subheading{
+    font-family: 'Montserrat', serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+
+.social{
+    margin: 1em 0;
+    font-size: 3em;
+}
+
+.social a{
+    text-decoration: none;
+
+}
+.social a:link{color:inherit}
+.social a:visited{color:inherit}
+.social a:hover{
+    color: #126619;
+}
+.social a:active{color:inherit}
+
+.highlight{
+    text-decoration: none;
+    color: #126619;
 }
 
 .blag_post{
